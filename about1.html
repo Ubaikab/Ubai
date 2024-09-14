@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Crown Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        :root{
+            --headerclr:#222533;
+            --mainclr:#ffc800;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            text-transform: capitalize;
+            box-sizing: border-box;
+            transition: .2s;
+            font-family: 'Roboto', sans-serif;
+        }
+        html{
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        .header{
+            padding: 2rem 7%;
+            position: fixed;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background: var(--headerclr);
+            z-index: 10000;
+            font-weight: bold;
+        }
+        #logo{
+            color: var(--mainclr);
+            font-size: 30px;
+        }
+        .nav a{
+            color: white;
+            font-size: 1.9rem;
+            margin-left: 3rem;
+            justify-content: space-evenly;
+            align-items: center;
+            font-weight: bold;
+        }
+        .nav a:hover{
+            color: var(--mainclr);
+        }
+        .nav.active{
+            top: 100%;
+        }
+            </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" id="logo">Crown Construction</a>
+        <navbar class="nav">
+            <a href="index.html">Home</a>
+            <a href="gallery1.html">Gallery</a>
+            <a href="contact1.html">Contact</a>
+        </navbar>
+    </header>
+</body>
+</html>
